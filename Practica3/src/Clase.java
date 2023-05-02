@@ -6,7 +6,7 @@ import Jama.Matrix;
 public class Clase {
 	
 	private String nombre;
-	private List<Matrix> lista;
+	private ArrayList<Matrix> lista;
 	private Matrix media;
 	private Matrix cov;
 
@@ -89,6 +89,13 @@ public class Clase {
 	
 	
 	
+	public ArrayList<Matrix> getLista() {
+		return lista;
+	}
+
+
+
+
 	public void print() {
 		for (Matrix m : lista) {
 			m.print(1, 1);
