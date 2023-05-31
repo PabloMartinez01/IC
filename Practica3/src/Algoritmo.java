@@ -6,4 +6,5 @@ public interface Algoritmo {
 	
 	public void execute();
 
+
 }

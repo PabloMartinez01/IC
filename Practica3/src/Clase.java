@@ -58,10 +58,8 @@ public class Clase {
 		
 		
 		Matrix dif = m.minus(media);
-		Matrix inv = cov.inverse();
-		
-	
 		Matrix res = dif.times(cov);
+		
 		res = res.times(dif.transpose());
 		
 		return res.get(0, 0);
